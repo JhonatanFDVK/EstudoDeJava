@@ -15,10 +15,6 @@ public class Exercicio06 {
         System.out.print("IDADE: ");
         idade = input.nextInt();
 
-        if (idade < 0) {
-            System.out.println("Impossivel  calcular.");
-        }
-
         while (idade >= 0) {
             somaIdade += idade;
             quantidadeDigitado += 1;
@@ -28,7 +24,10 @@ public class Exercicio06 {
 
         if (quantidadeDigitado != 0) {
             media = (double) somaIdade / quantidadeDigitado;
-            System.out.printf("%.2f", media);
+            System.out.printf("%.2f\n", media);
+        }
+        else {
+            System.out.println("Impossivel calcular.");
         }
         
         input.close();
