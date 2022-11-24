@@ -23,7 +23,6 @@ public class Teste {
 				System.out.println("Senha incorreta!");
 				System.out.print("Senha: ");
 				senha = sc.next().trim();
-				break;
 			}
 		}
 		
